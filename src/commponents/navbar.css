@@ -1,0 +1,37 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .navbar-left,
+  .navbar-right {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navbar-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    height: 40px; /* Sesuaikan ukuran logo */
+  }
+  
+  span {
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  span:hover {
+    color: #007bff; /* Warna saat hover */
+  }
+  
