@@ -1,37 +1,74 @@
-.navbar {
+/* Reset dasar untuk memastikan konsistensi */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar utama */
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #ddd;
+    background-color: #b33939; /* Warna merah untuk navbar */
+    border-bottom: 1px solid #ddd; /* Garis bawah untuk pemisah */
+    margin: 0; /* Pastikan tidak ada margin */
+    box-shadow: none; /* Hilangkan bayangan default */
+    border: none; /* Hilangkan border tambahan */
   }
   
+  /* Bagian kiri navbar */
   .navbar-left,
   .navbar-right {
     display: flex;
-    gap: 15px;
+    gap: 25px; /* Jarak antar elemen */
   }
   
+  /* Bagian tengah navbar (logo) */
   .navbar-center {
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
+  /* Gaya logo */
   .navbar-logo {
-    height: 40px; /* Sesuaikan ukuran logo */
+    height: 40px; /* Tinggi logo */
   }
   
+  /* Gaya teks */
   span {
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
-    color: #333;
-    text-decoration: none;
+    color: #fff; /* Warna teks putih */
+    text-decoration: none; /* Hilangkan garis bawah */
   }
   
+  /* Efek hover untuk teks */
   span:hover {
-    color: #007bff; /* Warna saat hover */
+    color: #ffd700; /* Warna emas saat hover */
+  }
+  
+  /* Responsif untuk layar kecil */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Susun navbar secara vertikal */
+      align-items: flex-start; /* Rata kiri untuk elemen */
+    }
+  
+    .navbar-left,
+    .navbar-right {
+      gap: 10px; /* Kurangi jarak antar elemen */
+    }
+  
+    .navbar-logo {
+      height: 30px; /* Perkecil logo untuk layar kecil */
+    }
+  
+    span {
+      font-size: 14px; /* Perkecil ukuran teks */
+    }
   }
   

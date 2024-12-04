@@ -1,21 +1,25 @@
-import React from 'react';
-import './navbar.css'; // Buat file CSS terpisah untuk styling
+import React from "react";
+import { Link } from "react-router-dom"; // Import Link dari react-router-dom
+import "./navbar.css"; // Pastikan file CSS ini tersedia
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-left">
-        <span>Kata1</span>
-        <span>Kata2</span>
-        <span>Kata3</span>
+        <Link to="/about-us"><span>About Us</span></Link>
+        <Link to="/products"><span>Products</span></Link>
+        <Link to="/workshop"><span>Workshop</span></Link>
       </div>
       <div className="navbar-center">
-        <img src="logo.png" alt="Logo" className="navbar-logo" />
+        {/* Membungkus logo dengan Link ke Home */}
+        <Link to="/">
+          <img src="logo.png" alt="Logo" className="navbar-logo" />
+        </Link>
       </div>
       <div className="navbar-right">
-        <span>Kata4</span>
-        <span>Kata5</span>
-        <span>Kata6</span>
+        <Link to="/harga"><span>Harga</span></Link>
+        <Link to="/booking"><span>Booking</span></Link>
+        <Link to="/news"><span>News</span></Link>
       </div>
     </nav>
   );
