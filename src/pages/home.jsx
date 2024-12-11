@@ -4,7 +4,7 @@ import Navbar from '../commponents/navbar'; // Path ke komponen Navbar
 const Home = () => {
   return (
     <div>
-      <Navbar />
+      
       
     </div>
   );
