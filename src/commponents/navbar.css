@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between; /* Menyebarkan konten kiri, tengah, dan kanan */
   align-items: center;
-  background-color: #333; /* Warna background */
-  padding: 15px 20px;
+  background-color: hsl(300, 10%, 20%); /* 10% lebih terang dari warna asli */
+  padding: 1zpx 20px;
   height: 80px; /* Tinggi navbar */
   width: 100%; /* Pastikan lebar penuh */
   position: fixed; /* Membuat navbar tetap di atas saat scroll */
@@ -16,24 +16,24 @@
   display: flex;
   justify-content: center; /* Untuk meratakan teks ke tengah */
   align-items: center;
-  gap: 15px; /* Mengurangi jarak antar item */
+  gap: 75px; /* Mengurangi jarak antar item */
 }
 
 .navbar-left span, .navbar-right span {
   color: white;
-  font-size: 1.2rem; /* Ukuran font */
+  font-size: 1.1rem; /* Ukuran font */
   text-decoration: none;
   cursor: pointer;
-  word-spacing: 0.2em; /* Menambahkan jarak antar kata */
+  word-spacing: 0.5em; /* Menambahkan jarak antar kata */
 }
 
 .navbar-left span:hover, .navbar-right span:hover {
   text-decoration: underline; /* Tambahkan efek hover */
 }
 
-/* .navbar-center {
+.navbar-center {
   text-align: center;
-} */
+}
 
 .navbar-logo {
   height: 60px; /* Ukuran logo */
