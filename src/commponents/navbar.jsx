@@ -1,19 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Import Link dari react-router-dom
 import "./navbar.css"; // Pastikan file CSS ini tersedia
+import logo from "../assets/logo.png"; // Mengimpor logo
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-left">
-        <Link to="/about-us"><span>AboutUs</span></Link>
+        <Link to="/about-us"><span>About Us</span></Link>
         <Link to="/products"><span>Products</span></Link>
         <Link to="/workshop"><span>Workshop</span></Link>
       </div>
       <div className="navbar-center">
         {/* Membungkus logo dengan Link ke Home */}
         <Link to="/">
-          <img src="logo.png" alt="Logo" className="navbar-logo" />
+          <img src={logo} alt="Logo" className="navbar-logo" />
         </Link>
       </div>
       <div className="navbar-right">

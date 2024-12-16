@@ -1,34 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .navbar {
   display: flex;
-  justify-content: space-between; /* Menyebarkan konten kiri, tengah, dan kanan */
+  justify-content: space-between;
   align-items: center;
-  background-color: hsl(300, 10%, 20%); /* 10% lebih terang dari warna asli */
-  padding: 1zpx 20px;
-  height: 80px; /* Tinggi navbar */
-  width: 100%; /* Pastikan lebar penuh */
-  position: fixed; /* Membuat navbar tetap di atas saat scroll */
+  background-color:#1E171E;
+  padding: 10px 20px;
+  height: 80px;
+  width: 100%;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000; /* Menjaga navbar di atas elemen lain */
+  z-index: 1000;
 }
 
 .navbar-left, .navbar-right {
   display: flex;
-  justify-content: center; /* Untuk meratakan teks ke tengah */
+  justify-content: center;
   align-items: center;
-  gap: 75px; /* Mengurangi jarak antar item */
+  gap: 75px;
 }
 
 .navbar-left span, .navbar-right span {
   color: white;
-  font-size: 1.1rem; /* Ukuran font */
+  font-size: 1.1rem;
   text-decoration: none;
   cursor: pointer;
-  word-spacing: 0.5em; /* Menambahkan jarak antar kata */
+  word-spacing: 0.5em;
 }
 
 .navbar-left span:hover, .navbar-right span:hover {
-  text-decoration: underline; /* Tambahkan efek hover */
+  text-decoration: underline;
 }
 
 .navbar-center {
@@ -36,18 +45,57 @@
 }
 
 .navbar-logo {
-  height: 60px; /* Ukuran logo */
+  height: 60px;
   object-fit: contain;
 }
 
 .navbar-left, .navbar-right {
-  flex: 1; /* Membagi ruang kiri dan kanan */
+  flex: 1;
 }
 
 .navbar-center {
-  flex: 2; /* Memperbesar area tengah */
+  flex: 2;
   display: flex;
-  justify-content: center; /* Membuat logo di tengah */
-  padding-left: 20px;  /* Memberikan jarak dari kiri */
-  padding-right: 20px; /* Memberikan jarak dari kanan */
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .navbar-center {
+    order: 1;
+    margin-bottom: 10px;
+  }
+
+  .navbar-left, .navbar-right {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    order: 2;
+  }
+
+  .navbar-left span, .navbar-right span {
+    font-size: 1rem; /* Mengurangi ukuran font pada layar kecil */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-left, .navbar-right {
+    gap: 10px; /* Kurangi jarak antar item pada layar sangat kecil */
+  }
+
+  .navbar-left span, .navbar-right span {
+    font-size: 0.9rem; /* Ukuran font lebih kecil */
+  }
+
+  .navbar-logo {
+    height: 50px; /* Ukuran logo lebih kecil */
+  }
 }
