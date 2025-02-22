@@ -24,25 +24,26 @@ const Home = () => {
         <div className="card">
           <img src="https://via.placeholder.com/300x200" alt="Card 1" />
           <div className="card-description">
-            <p>Deskripsi layanan 1 yang luar biasa.</p>
+            <p>Coating</p>
           </div>
         </div>
 
         <div className="card">
           <img src="https://via.placeholder.com/300x200" alt="Card 2" />
           <div className="card-description">
-            <p>Deskripsi layanan 2 yang menarik.</p>
+            <p>Power Clean</p>
           </div>
         </div>
 
         <div className="card">
           <img src="https://via.placeholder.com/300x200" alt="Card 3" />
           <div className="card-description">
-            <p>Deskripsi layanan 3 yang sangat berguna.</p>
+            <p>Dressing</p>
           </div>
         </div>
       </div>
       {/* End Products */}
+      
     </div>
   );
 };
