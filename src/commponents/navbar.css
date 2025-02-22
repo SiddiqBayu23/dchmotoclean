@@ -31,13 +31,9 @@
 .navbar-left span, .navbar-right span {
   color: white;
   font-size: 1.1rem;
-  text-decoration: none;
+  
   cursor: pointer;
   word-spacing: 0.5em;
-}
-
-.navbar-left span:hover, .navbar-right span:hover {
-  text-decoration: underline;
 }
 
 .navbar-center {
