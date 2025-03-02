@@ -66,3 +66,54 @@
     font-size: 0.9rem; /* Sedikit mengurangi ukuran font */
     color: #555;
 }
+
+/* About Us */
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 20px;
+    background: #f9f9f9;
+    margin-top: 50px; /* Memberi jarak dari bagian sebelumnya */
+}
+
+.about-text {
+    width: 50%;
+    text-align: left;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-image {
+    width: 50%;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .about-us {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text, .about-image {
+        width: 100%;
+    }
+}
