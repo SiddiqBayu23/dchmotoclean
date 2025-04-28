@@ -45,21 +45,28 @@ const Home = () => {
         </div>
       </div>
 
+      
       {/* About Us Section */}
-      <div className="about-us">
-        <div className="about-text">
-          <h2>About Us</h2>
-          <p>
-            DCH Motoclean adalah perusahaan yang berfokus pada solusi 
-            perawatan kendaraan dengan produk berkualitas tinggi. Kami 
-            berkomitmen untuk memberikan pengalaman terbaik bagi pelanggan 
-            dalam menjaga kendaraan mereka tetap bersih dan terawat.
-          </p>
-        </div>
-        <div className="about-image">
-          <img src="https://via.placeholder.com/400x250" alt="About Us" />
-        </div>
-      </div>
+<div className="about-us">
+  <h2>About Us</h2> {/* Judul di tengah */}
+  
+  <div className="about-content">
+    <div className="about-text">
+      <p>
+        DCH Motoclean adalah perusahaan yang berfokus pada solusi 
+        perawatan kendaraan dengan produk berkualitas tinggi. Kami 
+        berkomitmen untuk memberikan pengalaman terbaik bagi pelanggan 
+        dalam menjaga kendaraan mereka tetap bersih dan terawat.
+      </p>
+    </div>
+    
+    <div className="about-image">
+      <img src="https://i.ibb.co/wFZQbTzX/logo.png" alt="About Us" />
+    </div>
+  </div>
+</div>
+
+
 
     </div>
   );
